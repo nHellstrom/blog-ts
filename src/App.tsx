@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SectionsContainer from './components/SectionsContainer/SectionsContainer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <p>Welcome! Press the button below to fetch data from the API.</p>
           <button>Click me!</button>
         </div>
+        <SectionsContainer/>
       </body>
     </div>
   );

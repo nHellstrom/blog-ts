@@ -1,0 +1,47 @@
+.BlogSection__container {
+    background-color: var(--primary-dark);
+    padding: 0.5rem 1rem;
+}
+
+.BlogSection__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .BlogSection__title{
+} */
+
+.BlogSection__toggle {
+    font-size: 1.4rem;
+    transition: all 0.15s;
+}
+
+.BlogSection__toggle:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.BlogSection__toggle:active{
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+.BlogSection__content {
+    min-height: 10rem;
+    width: 100%;
+    background-color: blue
+}
+
+.BlogSection__content--visible {
+    /* display: flex; */
+    background-color: rgb(199, 252, 9) ;
+    color: green ;
+}
+
+.BlogSection__content--hidden {
+    /* display: flex; */
+    background-color: rgb(255, 166, 0);
+    color: red;
+}

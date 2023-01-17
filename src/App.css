@@ -5,8 +5,12 @@
   --primary-light: #AC6291;
 }
 
-.App {
-  text-align: center;
+html {
+  font-size: 62.5%;
+}
+
+Body {
+  font-family: 'Rubik', sans-serif; 
 }
 
 .App__body {
@@ -24,4 +28,5 @@
   background-color: var(--primary-light);
   max-width: 22rem;
   padding: 1rem 2rem;
+  margin: 3rem 1rem;
 }
