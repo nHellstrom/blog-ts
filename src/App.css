@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #6F1E51;
-  --main-bg-color: #1e6f3c;
-  --primary-dark: #31001F;
-  --primary-light: #AC6291;
+  --primary-color: #c47335;
+  --main-bg-color: #2660A4;
+  --primary-dark: #56351e;
+  --primary-light: #f19953;
 }
 
 html {
@@ -11,11 +11,11 @@ html {
 
 body {
   font-family: 'Rubik', sans-serif; 
+  background-color: var(--main-bg-color);
 }
 
 .App__body {
-  background-color: var(--main-bg-color);
-  min-height: 100vh;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,4 +34,16 @@ body {
 .App__flexrow {
   display: flex;
   flex-direction: row;
+}
+.App__header {
+  background-color: var(--primary-light);
+  position:fixed;
+  height: 100vh;
+  width: 12rem;
+  top: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
 }

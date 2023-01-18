@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <header className="App__header">
-        Header
+        Navbar
       </header>
       <div className="App__body">
         <div className="App__flexrow">
