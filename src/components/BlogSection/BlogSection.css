@@ -27,7 +27,7 @@
 
 .BlogSection__toggle {
     font-size: 1.4rem;
-    background-color: var(--primary-dark);
+    background-color: var(--primary-light);
     padding: 4px;
     border-radius: 1000px;
     transition: all 0.15s;
