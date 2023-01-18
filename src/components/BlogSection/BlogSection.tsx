@@ -11,9 +11,11 @@ const BlogSection = (props : any) => {
         setVisibility(!isVisible);
     }
 
+    const styleHeader =  props.tag.charAt(0).toUpperCase() + props.tag.toLowerCase().slice(1);
+
     return <section className="BlogSection__container">
         <div className="BlogSection__header">
-            <h4 className="BlogSection__title">Section "{props.tag}"</h4>
+            <h4 className="BlogSection__title">Section <i>{styleHeader}</i></h4>
             <b>Posts: {props.posts.length}</b>
             <div className="BlogSection__toggle" onClick={toggleSectionVisibility}>{isVisible ? "Close ❌" : "Open 🟢"} </div>
         </div>
