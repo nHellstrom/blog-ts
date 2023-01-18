@@ -1,19 +1,31 @@
 :root {
-  --primary-color: #117a2b;
+  --primary-color: #7a1d11;
+  --main-bg-color: #c49898;
+  --primary-dark: #4b111188;
+  --primary-light: #7a5252;
+  --primary-light2: #f3d2d2;
+  --secondary-color: #d4d0c7;
+  /* --primary-color: #117a2b;
   --main-bg-color: #98acc4;
   --primary-dark: #284b1188;
   --primary-light: #548a53;
   --primary-light2: #d2f3d6;
-  --secondary-color: #7077d3;
+  --secondary-color: #7077d3; */
 }
 
 html {
   font-size: 62.5%;
+  
 }
 
 body {
   font-family: 'Rubik', sans-serif; 
   background-color: var(--main-bg-color);
+  background-image: url("../public/00041.jpg");
+  /* background-position: 0; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .App__body {
@@ -27,7 +39,7 @@ body {
 }
 
 .App__welcome {
-  background-color: var(--primary-light);
+  background-color: var(--primary-dark);
   width: 60vw;
   max-width: 800px;
   padding: 2rem 3rem;
