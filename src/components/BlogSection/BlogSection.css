@@ -1,12 +1,18 @@
 .BlogSection__container {
     background-color: var(--primary-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
 }
 
 .BlogSection__header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 5rem;
     justify-content: space-between;
 }
 
@@ -30,19 +36,22 @@
 
 .BlogSection__content {
     min-height: 10rem;
-    margin:1rem;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin:1rem; */
+    width: 40rem;
     background-color: blue
 }
 
 .BlogSection__content--visible {
     /* display: flex; */
     background-color: rgb(199, 252, 9) ;
+    display: flex;
     color: #222;
 }
 
 .BlogSection__content--hidden {
     /* display: flex; */
-    background-color: rgb(255, 166, 0);
+    display:none;
     color: #222;
 }

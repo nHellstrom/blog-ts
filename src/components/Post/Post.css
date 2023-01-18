@@ -1,0 +1,9 @@
+.Post__container{
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+}
+
+.Post__container:nth-child(2n) {
+    background-color: var(--primary-light);
+}
