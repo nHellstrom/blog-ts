@@ -1,21 +1,49 @@
 .Post__container{
-    background-color: crimson;
+    background-color: var(--primary-light2);
     display: flex;
     flex-direction: column;
     padding: 0.33rem 1rem;
+    gap:0.8rem;
+    /* margin-bottom: 4rem; */
 }
 
 .Post__container:nth-child(2n) {
     background-color: var(--primary-light);
 }
 
+.Post__titlediv {
+    background-color: var(--secondary-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+    height: 100%;
+}
+
+.Post__titlediv:hover {
+    cursor: pointer;
+    background-color: rgb(96, 173, 163);
+}
+
 .Post__tags {
     display: flex;
     gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.Post__hidden {
+    display: none;
 }
 
 .Post__individualtag {
-    background-color: mediumturquoise;
+    background-color: var(--primary-color);
+    color:#fff;
     border-radius: 100rem;
     padding: 0.25rem 0.5rem;
+}
+
+.Post__extramargin{
+    margin: 1rem 0;
 }

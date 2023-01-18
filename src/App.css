@@ -1,8 +1,10 @@
 :root {
-  --primary-color: #c47335;
-  --main-bg-color: #2660A4;
-  --primary-dark: #56351e;
-  --primary-light: #f19953;
+  --primary-color: #117a2b;
+  --main-bg-color: #98acc4;
+  --primary-dark: #284b1188;
+  --primary-light: #548a53;
+  --primary-light2: #d2f3d6;
+  --secondary-color: #7077d3;
 }
 
 html {
@@ -26,9 +28,10 @@ body {
 
 .App__welcome {
   background-color: var(--primary-light);
-  max-width: 22rem;
-  padding: 1rem 2rem;
-  margin: 3rem 1rem;
+  width: 60vw;
+  max-width: 800px;
+  padding: 2rem 3rem;
+  margin: 4rem 2rem;
 }
 
 .App__flexrow {
@@ -46,4 +49,18 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 2.4rem;
+}
+
+.App__welcometags {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.App__welcometag {
+  background-color: var(--primary-color);
+  padding: 3px;
+  border-radius: 100px;
 }

@@ -1,11 +1,17 @@
 .BlogSection__container {
     background-color: var(--primary-dark);
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
+    transition: all 0.15s;
+}
+
+.BlogSection__container:hover {
+    box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.02);
 }
 
 .BlogSection__header {
@@ -21,6 +27,8 @@
 
 .BlogSection__toggle {
     font-size: 1.4rem;
+    background-color: var(--primary-color);
+    padding: 2px;
     transition: all 0.15s;
 }
 
@@ -40,12 +48,10 @@
     flex-direction: column;
     /* margin:1rem; */
     width: 40rem;
-    background-color: blue
 }
 
 .BlogSection__content--visible {
     /* display: flex; */
-    background-color: rgb(199, 252, 9) ;
     display: flex;
     color: #222;
 }

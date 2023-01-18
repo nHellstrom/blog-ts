@@ -1,5 +1,5 @@
 .Sections__container{
-    background-color: var(--primary-light);
+    /* background-color: var(--primary-light); */
     min-width: 48rem;
     max-width: 68rem;
     height: 90vh;

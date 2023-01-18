@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SectionsContainer from './components/SectionsContainer/SectionsContainer';
@@ -26,12 +26,17 @@ function App() {
     setTags(tagsHolder);
   }
 
-  const fetchData = async () => {
-    const data = await fetch("https://dummyjson.com/posts");
-    const res = await data.json()
-    console.log("API data: ", res);
-    extractTagsFromApiData(res);
-  }
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetch("https://dummyjson.com/posts");
+      const res = await data.json()
+      console.log("API data: ", res);
+      extractTagsFromApiData(res);
+    }
+
+    fetchData().catch(console.error)
+  })
 
   
 
@@ -43,15 +48,12 @@ function App() {
       <div className="App__body">
         <div className="App__flexrow">
           <div className="App__welcome">
-            <h1>Blog Title</h1>
-            <p>Welcome! Press the button below to fetch data from the API.</p>
-            <button onClick={fetchData}>Click me!</button>
-          </div>
-          <div className="App__welcome">
+            <h1>Tiny (API) Blog</h1>
+            <p>Welcome to a tiny blog!</p>
             <p>It currently contains the following tags:</p>
-            <ol>
-              {tags?.map((tag) => <li key={tag}>{tag}</li>)}
-            </ol>
+            <span className="App__welcometags">
+              {tags?.map((tag) => <span key={tag} className="App__welcometag">{tag}</span>)}
+            </span>
           </div>
         </div>
         <SectionsContainer tags={tags} posts={blogPosts}/>
