@@ -40,7 +40,7 @@ function App() {
       <header className="App__header">
         Header
       </header>
-      <body className="App__body">
+      <div className="App__body">
         <div className="App__flexrow">
           <div className="App__welcome">
             <h1>Blog Title</h1>
@@ -50,12 +50,12 @@ function App() {
           <div className="App__welcome">
             <p>It currently contains the following tags:</p>
             <ol>
-              {tags?.map((tag) => <li>{tag}</li>)}
+              {tags?.map((tag) => <li key={tag}>{tag}</li>)}
             </ol>
           </div>
         </div>
         <SectionsContainer tags={tags} posts={blogPosts}/>
-      </body>
+      </div>
     </div>
   );
 }

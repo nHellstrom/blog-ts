@@ -18,7 +18,7 @@ const BlogSection = (props : any) => {
             <div className="BlogSection__toggle" onClick={toggleSectionVisibility}>{isVisible ? "Close ❌" : "Open 🟢"} </div>
         </div>
         <div className={`BlogSection__content BlogSection__content--${isVisible ? "visible" : "hidden"}`}>
-            {props.posts.map((p : IBlogPost) => <Post data={p}/>)}
+            {props.posts.map((p : IBlogPost) => <Post data={p} key={p.id}/>)}
 
         </div>
     </section>

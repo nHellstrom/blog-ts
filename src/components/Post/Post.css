@@ -2,8 +2,20 @@
     background-color: crimson;
     display: flex;
     flex-direction: column;
+    padding: 0.33rem 1rem;
 }
 
 .Post__container:nth-child(2n) {
     background-color: var(--primary-light);
+}
+
+.Post__tags {
+    display: flex;
+    gap: 1rem;
+}
+
+.Post__individualtag {
+    background-color: mediumturquoise;
+    border-radius: 100rem;
+    padding: 0.25rem 0.5rem;
 }
