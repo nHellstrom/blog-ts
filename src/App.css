@@ -21,8 +21,9 @@ html {
 body {
   font-family: 'Rubik', sans-serif; 
   background-color: var(--main-bg-color);
-  background-image: url("../public/00041.jpg");
+  background-image: url("../public/00042.jpg");
   /* background-position: 0; */
+  background-position: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
